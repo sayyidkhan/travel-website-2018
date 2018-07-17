@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Orokin Admin Page - View Package</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- favicon -->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!-- bootstrap 4.0 -->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<!-- === animate.css === -->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!-- === animate.css === -->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!-- === util.css === -->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+<!-- main.css -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-dark bg-dark fixed-top header-padding-type-1 navbar-expand-md"
+role="navigation" style="background-color: #333;">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span>
+&#x2630;</button>
+        <div> <a class="navbar-brand" href="#" style="padding:10px;"><strong class="padding-left-point5em"><i>THE OROKIN</i></strong>&#xA0;<p class="padding-left-point5em" style="font-size: 14px">ADMIN PAGE</p></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav ml-auto padding-right-2em">
+                <li class="nav-item"> <a href="../index.html" class="nav-link">Add Package</a>
+                </li>
+                <li class="divider-line nav-item"></li>
+                <li class="nav-item"> <a href="view_package.html" class="nav-link">View Package</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>   
+
+	<div class="limiter">
+		<div class="container-table100" style="margin-top:4em;">
+			<div id="no-database" class="wrap-table100" >
+
+				<div id="remove-database"  class="table100 ver4 m-b-110 animated pulse">
+					<table data-vertable="ver4">
+						<thead>
+							<tr  class="row100 head">
+								<th class="column100"><h6 id="h2_Title">View Travel Package</h6></th>
+								<th class="column100"></th>
+								<th class="column100"></th>
+								<th class="column100"></th>
+								<th class="column100"></th>
+								<th class="column100"></th>
+								<th class="column100"></th>
+								<th class="column100"></th>
+							</tr>
+						</thead>
+						<thead>
+							<tr  class="row100 head">
+								<th class="column100 column1 " data-column="column1"><p class="animated bounce">Package Title</p></th>
+								<th class="column100 column2 " data-column="column2"><p class="animated bounce">Country</p></th>
+								<th class="column100 column3 " data-column="column3"><p class="animated bounce">Price</p></th>
+								<th class="column100 column4 " data-column="column4"><p class="animated bounce">Start Date</p></th>
+								<th class="column100 column5 " data-column="column5"><p class="animated bounce">End Date</p></th>
+								<th class="column100 column6 " data-column="column6"><p class="animated bounce">Description</p></th>
+								<th class="column100" data-column="column7" style="background-color: #555;">
+								<p id="select-all-id" class="select-all animated bounce">SELECT ALL</p>
+							    </th> 
+								<th class="column100" style="background-color: #555;">
+							    <p id="delete-ID" class="animated bounce">Delete</p>
+							    </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr id="table-row-1" class="row100">
+								<td class="column100 column1" data-column="column1">Hong Kong Star Tour</td>
+								<td class="column100 column2" data-column="column2">Hong Kong</td>
+								<td class="column100 column3" data-column="column3">888</td>
+								<td class="column100 column4" data-column="column4">01 January 2017</td>
+								<td class="column100 column5" data-column="column5">06 January 2017</td>
+								<td class="column100 column6" data-column="column6">Non-Peak Period</td>
+								<td class="column100 column7" data-column="column7">
+								<input id="checkbox-1" class="checkbox_check" type="checkbox"></td>
+								<td class="column100 column8" data-column="column8">
+								<i id="tashCan-1" class="fas fa-trash fa-disabled"></i></td>
+
+							</tr>
+
+							<tr id="table-row-2" class="row100">
+								<td class="column100 column1" data-column="column1">Taiwan Ultimate Value</td>
+								<td class="column100 column2" data-column="column2">Taipei, Taiwan</td>
+								<td class="column100 column3" data-column="column3">1398</td>
+								<td class="column100 column4" data-column="column4">01 October 2017</td>
+								<td class="column100 column5" data-column="column5">07 October 2017</td>
+								<td class="column100 column6" data-column="column6">Peak Period</td>
+								<td class="column100 column7" data-column="column7">
+								<input id="checkbox-2" class="checkbox_check" type="checkbox"></td>
+								<td class="column100 column8" data-column="column8">
+								<i id="tashCan-2" class="fas fa-trash fa-disabled"></i></td>
+							</tr>
+
+							<tr id="table-row-3" class="row100">
+								<td class="column100 column1" data-column="column1">Taiwan Family Fantasia</td>
+								<td class="column100 column2" data-column="column2">Taipei, Taiwan</td>
+								<td class="column100 column3" data-column="column3">1898</td>
+								<td class="column100 column4" data-column="column4">01 January 2017</td>
+								<td class="column100 column5" data-column="column5">07 January 2017</td>
+								<td class="column100 column6" data-column="column6">Non-Peak Period</td>
+								<td class="column100 column7" data-column="column7">
+								<input id="checkbox-3" class="checkbox_check" type="checkbox"></td>
+								<td class="column100 column8" data-column="column8">
+								<i id="tashCan-3" class="fas fa-trash fa-disabled"></i></td>
+							</tr>
+
+							<tr id="table-row-4" class="row100">
+								<td class="column100 column1" data-column="column1">Korea Ski Delight</td>
+								<td class="column100 column2" data-column="column2">Seoul, Korea</td>
+								<td class="column100 column3" data-column="column3">1810</td>
+								<td class="column100 column4" data-column="column4">01 December 2017</td>
+								<td class="column100 column5" data-column="column5">08 December 2017</td>
+								<td class="column100 column6" data-column="column6">Peak Period</td>
+								<td class="column100 column7" data-column="column7">
+								<input id="checkbox-4" class="checkbox_check" type="checkbox"></td>
+								<td class="column100 column8" data-column="column8">
+								<i id="tashCan-4" class="fas fa-trash fa-disabled"></i></td>
+								</td>
+							</tr>
+
+							<tr id="table-row-5" class="row100">
+								<td class="column100 column1" data-column="column1">Central Japan Winter Edition</td>
+								<td class="column100 column2" data-column="column2">Japan, Tokyo</td>
+								<td class="column100 column3" data-column="column3">1988</td>
+								<td class="column100 column4" data-column="column4">01 December 2017</td>
+								<td class="column100 column5" data-column="column5">08 December 2017</td>
+								<td class="column100 column6" data-column="column6">Peak Period</td>
+								<td class="column100 column7" data-column="column7">
+								<input id="checkbox-5" class="checkbox_check" type="checkbox"></td>
+								<td class="column100 column8" data-column="column8">
+								<i id="tashCan-5" class="fas fa-trash fa-disabled"></i></td>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+	
+			</div>
+		</div>
+	</div>
+
+
+	
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
