@@ -1,0 +1,319 @@
+html {
+   font-family: 'Lora', serif;
+}
+
+body {
+   
+    background: -webkit-linear-gradient(90deg, #4a4a4a 0%, #1a1a1a 90%);
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #4a4a4a 0%, #1a1a1a 90%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #4a4a4a 0%, #1a1a1a 90%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #4a4a4a 0%, #1a1a1a 90% ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #4a4a4a 0%, #1a1a1a 90%); /* Standard syntax (must be last) */
+    margin-top: 2em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+
+
+/* form starting stylings ------------------------------- */
+.group {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+input {
+    font-size: 18px;
+    padding: 5px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
+
+    input:focus {
+        outline: none;
+    }
+
+/* === js event - [input] === */
+
+.js-input-green-bottom {
+    border-bottom: 1px solid #ABCB9D;   
+}
+
+.js-input-orange-bottom {
+    border-bottom: 1px solid #FFA43A;   
+}
+
+.font-color-green {
+    color: #ABCB9D;
+}
+
+.font-color-orange {
+    color: #FFA43A;
+}
+
+/* === js event - [input] === */
+
+
+/* === label === */ 
+label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+    top: -10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* === bottom bars === */ 
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+
+}
+
+    .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #fff;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+    .bar:after {
+        right: 50%;
+    }
+
+/* === js event - [input] === */
+
+.js-bar-green {
+    position: relative;
+    display: block;
+    width: 100%;
+
+}
+
+    .js-bar-green:before, .js-bar-green:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #ABCB9D;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .js-bar-green:before {
+        left: 50%;
+    }
+
+    .js-bar-green:after {
+        right: 50%;
+    }
+
+.js-bar-orange {
+    position: relative;
+    display: block;
+    width: 100%;
+
+}
+
+    .js-bar-orange:before, .js-bar-orange:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #FFA43A;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .js-bar-orange:before {
+        left: 50%;
+    }
+
+    .js-bar-orange:after {
+        right: 50%;
+    }
+
+/* === js event - [input] === */
+
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/* === highlight === */ 
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* === ANIMATIONS === */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #fff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #fff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #fff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+#panel {
+
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: -webkit-linear-gradient(90deg, #A41213 0%, #680004 90%);
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #A41213 0%, #680004 90%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #A41213 0%, #680004 90%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #A41213 0%, #680004 90% ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #A41213 0%, #680004 90%); /* Standard syntax (must be last) */
+    
+    
+    border-radius: 6px;
+    top: 10px;
+    bottom: 10px;
+
+}
+
+/* === nav-bar css styling === */
+
+.starter-template {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.padding-right-2em {
+    padding-right: 2em;
+}
+
+.padding-left-point5em {
+    padding-left: 0.5em;
+}
+
+/* start of nav-bar-divider-lines for the css */
+.divider-line {
+  height: 1px;
+  margin: 10px 0;
+  overflow: hidden;
+  background-color:  #b3b3b3;
+}
+
+.divider-line-type-2 {
+  height: 1px;
+  margin: 10px 0;
+  overflow: hidden;
+  background-color: #45454b;
+}
+/* start of nav-bar-divider-lines for the css */
+
+
+/* === nav-bar css styling === */
+
+/* start of media-management for the css */
+/* form padding away from nav-bar */
+@media (max-width:650px) {
+
+   body {
+      padding-top: 60px;
+    }
+
+}
+/* end of media-management for the css */
+
+/* === additional css styling === */
+
+.padding-top-2em {
+    padding-top: 20px;
+}
+
+.form-size-80 {
+     max-width: 85%;
+     padding-top: 5%;
+     padding-bottom: 5%;
+}
+
+.font-color-EFEFEA {
+  color: #D8D8D8;
+}
+
+.button-color-hover:hover {
+  background-color: #F5DCDC;
+}
+
+/* === additional css styling === */

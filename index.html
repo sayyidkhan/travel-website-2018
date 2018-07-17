@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Orokin Admin Page - Add Package</title>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	    <!-- bootstrap 3.3.7 plugins -->
+	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <!-- google fonts - open sans -->
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> 
+	    <!-- index.css -->
+	    <link href="index.css" rel="stylesheet" type="text/css"/>
+	    <!-- additional css files -->
+        <!-- === animate.css === -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+         <!-- === animate.css === -->
+  </head>
+
+
+  <body>
+
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top header-padding-type-1" role="navigation" style="background-color: #333">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" style="padding-bottom: 0.5em">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div>
+                <a class="navbar-brand" href="#" style="padding:10px;"><strong class="padding-left-point5em"><i>THE OROKIN</i></strong>&nbsp;<p class="padding-left-point5em" style="font-size: 14px">ADMIN PAGE</p></a>
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right padding-right-2em">
+                    <li>
+                        <a href="index.html">Add Package</a>
+                    </li>
+                    <li class="divider-line"></li>
+                    <li>
+                        <a href="view_package/view_package.html">View Package</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>   
+
+
+<div class="container form-size-80">
+
+
+    <div class="col-lg-offset-4 col-lg-4 animated pulse" id="panel">
+        <h2 id="h2_Title">Add New Travel Package</h2>
+
+        <form autocomplete="off">
+
+            <div class="group">
+                <input class ="font-color-EFEFEA" type="text" name="txtTitle" id="txtTitle" data-toggle="tooltip" title="Title of travel package is required" data-placement="bottom">
+                <span class="highlight"></span>
+                <span class="bar" id="txtTitle-bar"></span>
+                <label class="animated bounce">Title</label>
+                <div id="txtTitle-info"></div>
+            </div>
+
+            <div class="group font-color-EFEFEA" id="txtCountrycontainer">
+                <input class ="font-color-EFEFEA" type="text" name="txtCountry" id="txtCountry" data-toggle="tooltip" title="Country of Travel is required" data-placement="bottom">
+                <span class="highlight"></span>
+                <span class="bar" id="txtCountry-bar"></span>
+                <label style="color: white;" class="animated bounce">Country</label>
+                <div id="txtCountry-info"></div>
+            </div>
+
+            <div class="group">
+                <input class ="font-color-EFEFEA" type="text" name="txtPrice" id="txtPrice" data-toggle="tooltip" title="Price of travel package is required" data-placement="bottom">
+                <span class="highlight"></span>
+                <span class="bar" id="txtPrice-bar"></span>
+                <label class="animated bounce">Price</label>
+                <div id="txtPrice-info"></div>
+            </div>
+
+            <div class="group">
+                <input class ="font-color-EFEFEA" type="text" name="txtStartdate" id="txtStartdate" data-toggle="tooltip" title="Start date of travel package is required" data-placement="bottom" >
+                <span class="highlight"></span>
+                <span class="bar" id="txtStartdate-bar"></span>
+                <label class="animated bounce">Start Date</label>
+                <div id="txtStartdate-info"></div>
+            </div>
+
+            <div class="group">
+                <input class ="font-color-EFEFEA" type="text" name="txtEnddate" id="txtEnddate" data-toggle="tooltip" title="End date of travel package is required" data-placement="bottom" >
+                <span class="highlight"></span>
+                <span class="bar" id="txtEnddate-bar"></span>
+                <label class="animated bounce">End Date</label>
+                <div id="txtEnddate-info"></div>
+            </div>
+
+            <div class="group font-color-EFEFEA">
+                <input class ="font-color-EFEFEA" type="text" name="txtDescription" id="txtDescription" data-toggle="tooltip" title="Description of travel package is required" data-placement="bottom">
+                <span class="highlight"></span>
+                <span class="bar" id="txtDescription-bar"></span>
+                <label class="animated bounce">Description</label>
+                <div id="display_count" style="font-size: 12px"></div>
+            </div>
+
+
+            <div class="group">
+            	
+            	<center>
+                <button id="submitButton" type="submit" class="btn button-danger button-color-hover"><span class="glyphicon glyphicon-send"></span> Send
+                </button>
+                </center>
+ 
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+
+  <!-- country search files -->
+  <script src="countryautocomplete.js"></script>
+  <!-- basic javascript files -->
+  <script src="index.js"></script>
+  <!-- jquery javascript files -->
+  <script src="index-tooltip.js"></script>
+
+  </body>
+
+</html>
