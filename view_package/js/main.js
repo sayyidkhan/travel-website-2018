@@ -95,12 +95,12 @@ $( "#select-all-id" ).click(function() {
 	if ($(this).text() == "SELECT ALL") { 
         $(this).text("UNSELECT ALL");
         $('#delete-ID').text("DELETE ALL !").css({color: "#fa4251", backgroundColor: "#ffebed"}); 
-        $('#checkbox-1,#checkbox-2,#checkbox-3,#checkbox-4,#checkbox-5').attr('checked', true);
+        $('#checkbox-1,#checkbox-2,#checkbox-3,#checkbox-4,#checkbox-5').prop('checked', true);
 		$("#tashCan-1,#tashCan-2,#tashCan-3,#tashCan-4,#tashCan-5").one().removeClass('fa-disabled');
     } else { 
         $(this).text("SELECT ALL");
         $('#delete-ID').text("DELETE").css({color: "#fff", backgroundColor: "#555"});  
-        $('#checkbox-1,#checkbox-2,#checkbox-3,#checkbox-4,#checkbox-5').attr('checked', false);
+        $('#checkbox-1,#checkbox-2,#checkbox-3,#checkbox-4,#checkbox-5').prop('checked', false);
         $("#tashCan-1,#tashCan-2,#tashCan-3,#tashCan-4,#tashCan-5").one().addClass('fa-disabled');
     };
     /// enable/disable trashcan ///
